@@ -1,0 +1,12 @@
+__pycache__/
+.ipynb_checkpoints/
+*.py[cod]
+.DS_Store
+synthetic_energy_data.csv
+train.csv
+val.csv
+test.csv
+full_with_anomalies.csv
+forecast_predictions.csv
+anomaly_predictions.csv
+revised_outputs/

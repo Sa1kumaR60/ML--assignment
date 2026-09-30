@@ -1,0 +1,7 @@
+anomaly_type,events,caught,event_recall
+drop_outage,65,65,1.0
+sensor_stuck_T1,1,1,1.0
+sensor_stuck_T6,1,1,1.0
+sensor_stuck_T7,1,1,1.0
+sensor_stuck_T9,1,1,1.0
+spike,109,52,0.47706422018348627
