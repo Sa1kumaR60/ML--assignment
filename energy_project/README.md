@@ -7,7 +7,7 @@ This project forecasts appliance energy use 1 hour and 1 day ahead and detects a
 1. In Google Drive, create `MyDrive/energy_project` and put `synthetic_energy_data.csv` in it. The dataset is in the [project Drive folder](https://drive.google.com/drive/folders/1wr5eayMZcPtnrrGLa5RcVxVUDo7fbgDA); it is excluded from GitHub because it is about 90 MB. Make sure your account can access that folder, or upload your own copy.
 2. Open [`energy_project_revised.ipynb`](energy_project_revised.ipynb) in Google Colab. Connect to a standard CPU runtime and run cells top to bottom. Grant the notebook access to your Drive when prompted.
 3. The results are written to `MyDrive/energy_project/revised_outputs/`. Model training (cell 5 in the zero-based notebook structure) can take several minutes.
-4. To refresh the dashboard snapshot, copy `forecast_predictions.csv`, `anomaly_predictions.csv`, and the other generated files into this folder's `results/`, run `python dashboard/build_data.py` from the `energy_project` folder. It writes `dashboard/data.json`. The checked-in dashboard already contains the completed run.
+4. To refresh the dashboard snapshot, copy `forecast_predictions.csv`, `anomaly_predictions.csv`, and the other generated files into this folder's `results/`, run `python dashboard/build_data.py` from the `energy_project` folder. It writes `dashboard/data.json`. Then run `python dashboard/build_offline.py` to refresh the standalone HTML. The checked-in dashboard already contains the completed run.
 
 The notebook also works locally if `synthetic_energy_data.csv` is in the current working directory. Install `numpy pandas matplotlib scikit-learn xgboost shap` in your Python environment. SHAP is optional for the model results and may take extra time.
 
